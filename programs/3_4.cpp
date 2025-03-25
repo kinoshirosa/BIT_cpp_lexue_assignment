@@ -23,7 +23,7 @@ RMB::RMB(int yuan, int jiao, int fen) {
 }
 void RMB::input() {
 	int yuan, jiao, fen;
-	std::cout << "ÇëÊäÈëÔª¡¢½Ç¡¢·Ö£º" << std::endl;
+	std::cout << "è¯·è¾“å…¥å…ƒã€è§’ã€åˆ†ï¼š" << std::endl;
 	std::cin >> yuan >> jiao >> fen;
 	_yuan = yuan;
 	_jiao = jiao;
@@ -116,7 +116,7 @@ bool operator< (const RMB& rmb1, const RMB& rmb2) {
 	return true;
 }
 std::ostream& operator<< (std::ostream& os, const RMB& rmb) {
-	std::cout << rmb._yuan << "Ôª" << rmb._jiao << "½Ç" << rmb._fen << "·Ö";
+	std::cout << rmb._yuan << "å…ƒ" << rmb._jiao << "è§’" << rmb._fen << "åˆ†";
 	return os;
 }
 
@@ -124,7 +124,7 @@ int main() {
 	RMB rmb1, rmb2;
 	rmb1.input();
 	rmb2.input();
-	std::cout << "ºÍ£º" << rmb1 + rmb2 << std::endl;
-	std::cout << "²î£º" << rmb1 - rmb2 << std::endl;
+	std::cout << "å’Œï¼š" << rmb1 + rmb2 << std::endl;
+	std::cout << "å·®ï¼š" << rmb1 - rmb2 << std::endl;
 	return 0;
 }
